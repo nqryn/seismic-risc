@@ -5,108 +5,89 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('map_app', '0012_auto_20191026_0834'),
-    ]
+    dependencies = [("map_app", "0012_auto_20191026_0834")]
 
     operations = [
         migrations.RenameField(
-            model_name='building',
-            old_name='adresa',
-            new_name='address',
+            model_name="building", old_name="adresa", new_name="address"
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='editare_admin',
-            new_name='admin_update',
+            model_name="building",
+            old_name="editare_admin",
+            new_name="admin_update",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='actualizare_pmb',
-            new_name='administration_update',
+            model_name="building",
+            old_name="actualizare_pmb",
+            new_name="administration_update",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='nr_apart',
-            new_name='apartment_count',
+            model_name="building",
+            old_name="nr_apart",
+            new_name="apartment_count",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='numar_cadastral',
-            new_name='cadastre_number',
+            model_name="building",
+            old_name="numar_cadastral",
+            new_name="cadastre_number",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='expert_atestat',
-            new_name='certified_expert',
+            model_name="building",
+            old_name="expert_atestat",
+            new_name="certified_expert",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='loc',
-            new_name='county',
+            model_name="building", old_name="loc", new_name="county"
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='an_expertiza',
-            new_name='examination_year',
+            model_name="building",
+            old_name="an_expertiza",
+            new_name="examination_year",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='id_general',
-            new_name='general_id',
+            model_name="building", old_name="id_general", new_name="general_id"
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='regim_inaltime',
-            new_name='height_regime',
+            model_name="building",
+            old_name="regim_inaltime",
+            new_name="height_regime",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='nr_carte_funciara',
-            new_name='land_registry_number',
+            model_name="building",
+            old_name="nr_carte_funciara",
+            new_name="land_registry_number",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='sector',
-            new_name='locality',
+            model_name="building", old_name="sector", new_name="locality"
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='long',
-            new_name='lng',
+            model_name="building", old_name="long", new_name="lng"
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='obs',
-            new_name='observations',
+            model_name="building", old_name="obs", new_name="observations"
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='nr_postal',
-            new_name='post_code',
+            model_name="building", old_name="nr_postal", new_name="post_code"
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='nr_pmb',
-            new_name='registration_number',
+            model_name="building",
+            old_name="nr_pmb",
+            new_name="registration_number",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='clasa_categorie',
-            new_name='risk_category',
+            model_name="building",
+            old_name="clasa_categorie",
+            new_name="risk_category",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='arie_desfasurata',
-            new_name='surface',
+            model_name="building",
+            old_name="arie_desfasurata",
+            new_name="surface",
         ),
         migrations.RenameField(
-            model_name='building',
-            old_name='an_construire',
-            new_name='year_built',
+            model_name="building",
+            old_name="an_construire",
+            new_name="year_built",
         ),
-        migrations.RemoveField(
-            model_name='building',
-            name='nr_sector',
-        ),
+        migrations.RemoveField(model_name="building", name="nr_sector"),
     ]

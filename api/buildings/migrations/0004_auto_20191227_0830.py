@@ -5,14 +5,16 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('buildings', '0003_auto_20191123_1157'),
-    ]
+    dependencies = [("buildings", "0003_auto_20191123_1157")]
 
     operations = [
         migrations.AlterField(
-            model_name='building',
-            name='status',
-            field=models.SmallIntegerField(choices=[(0, 'Choose'), (1, 'Accepted'), (-1, 'Rejected')], db_index=True, default=0),
-        ),
+            model_name="building",
+            name="status",
+            field=models.SmallIntegerField(
+                choices=[(0, "Choose"), (1, "Accepted"), (-1, "Rejected")],
+                db_index=True,
+                default=0,
+            ),
+        )
     ]

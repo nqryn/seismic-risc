@@ -5,14 +5,15 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('map_app', '0009_auto_20190928_1214'),
-    ]
+    dependencies = [("map_app", "0009_auto_20190928_1214")]
 
     operations = [
         migrations.AddField(
-            model_name='building',
-            name='status',
-            field=models.SmallIntegerField(choices=[(0, 'Alege'), (1, 'Acceptă'), (-1, 'Respinge')], default=0),
-        ),
+            model_name="building",
+            name="status",
+            field=models.SmallIntegerField(
+                choices=[(0, "Alege"), (1, "Acceptă"), (-1, "Respinge")],
+                default=0,
+            ),
+        )
     ]

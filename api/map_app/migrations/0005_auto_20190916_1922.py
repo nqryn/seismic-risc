@@ -4,14 +4,12 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-    dependencies = [
-        ('map_app', '0004_building_an_construire'),
-    ]
+    dependencies = [("map_app", "0004_building_an_construire")]
 
     operations = [
         migrations.AlterField(
-            model_name='building',
-            name='an_expertiza',
+            model_name="building",
+            name="an_expertiza",
             field=models.IntegerField(default=-1),
-        ),
+        )
     ]

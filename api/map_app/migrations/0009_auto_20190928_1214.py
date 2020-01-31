@@ -5,33 +5,28 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('map_app', '0008_auto_20190917_1939'),
-    ]
+    dependencies = [("map_app", "0008_auto_20190917_1939")]
 
     operations = [
         migrations.RenameField(
-            model_name='building',
-            old_name='nr_cadastral',
-            new_name='numar_cadastral',
+            model_name="building",
+            old_name="nr_cadastral",
+            new_name="numar_cadastral",
         ),
-        migrations.RemoveField(
-            model_name='building',
-            name='an_construire',
-        ),
+        migrations.RemoveField(model_name="building", name="an_construire"),
         migrations.AlterField(
-            model_name='building',
-            name='an_expertiza',
+            model_name="building",
+            name="an_expertiza",
             field=models.IntegerField(null=True),
         ),
         migrations.AlterField(
-            model_name='building',
-            name='nr_sector',
+            model_name="building",
+            name="nr_sector",
             field=models.IntegerField(null=True),
         ),
         migrations.AlterField(
-            model_name='building',
-            name='sector',
-            field=models.CharField(default='sector', max_length=20),
+            model_name="building",
+            name="sector",
+            field=models.CharField(default="sector", max_length=20),
         ),
     ]

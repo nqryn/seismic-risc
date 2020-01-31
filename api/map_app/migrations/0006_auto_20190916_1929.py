@@ -4,19 +4,22 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-    dependencies = [
-        ('map_app', '0005_auto_20190916_1922'),
-    ]
+    dependencies = [("map_app", "0005_auto_20190916_1922")]
 
     operations = [
         migrations.AlterField(
-            model_name='building',
-            name='sector',
-            field=models.CharField(choices=[('Sector 1', 'Sector 1'),
-                                            ('Sector 2', 'Sector 2'),
-                                            ('Sector 3', 'Sector 3'),
-                                            ('Sector 4', 'Sector 4'),
-                                            ('Sector 5', 'Sector 5'),
-                                            ('Sector 6', 'Sector 6')], max_length=20),
-        ),
+            model_name="building",
+            name="sector",
+            field=models.CharField(
+                choices=[
+                    ("Sector 1", "Sector 1"),
+                    ("Sector 2", "Sector 2"),
+                    ("Sector 3", "Sector 3"),
+                    ("Sector 4", "Sector 4"),
+                    ("Sector 5", "Sector 5"),
+                    ("Sector 6", "Sector 6"),
+                ],
+                max_length=20,
+            ),
+        )
     ]

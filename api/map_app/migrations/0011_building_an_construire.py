@@ -5,34 +5,35 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('map_app', '0010_building_status'),
-    ]
+    dependencies = [("map_app", "0010_building_status")]
 
     operations = [
         migrations.AddField(
-            model_name='building',
-            name='an_construire',
+            model_name="building",
+            name="an_construire",
             field=models.IntegerField(null=True),
         ),
         migrations.AlterField(
-            model_name='building',
-            name='actualizare_pmb',
+            model_name="building",
+            name="actualizare_pmb",
             field=models.DateField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='building',
-            name='editare_admin',
+            model_name="building",
+            name="editare_admin",
             field=models.DateField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='building',
-            name='sector',
+            model_name="building",
+            name="sector",
             field=models.CharField(max_length=20),
         ),
         migrations.AlterField(
-            model_name='building',
-            name='status',
-            field=models.SmallIntegerField(choices=[(0, 'Alege'), (1, 'Acceptat'), (-1, 'Respins')], default=0),
+            model_name="building",
+            name="status",
+            field=models.SmallIntegerField(
+                choices=[(0, "Alege"), (1, "Acceptat"), (-1, "Respins")],
+                default=0,
+            ),
         ),
     ]

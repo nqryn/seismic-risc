@@ -6,19 +6,46 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('cms', '0001_initial'),
-    ]
+    dependencies = [("cms", "0001_initial")]
 
     operations = [
         migrations.CreateModel(
-            name='Attachment',
+            name="Attachment",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(help_text='Attachment name', max_length=150)),
-                ('upload_date', models.DateTimeField(auto_now=True, help_text='Attachment upload date')),
-                ('uploaded_file', models.FileField(upload_to='uploads/%Y/%m/%d/')),
-                ('page', models.ForeignKey(blank=True, help_text='Page attachment', on_delete=django.db.models.deletion.CASCADE, to='cms.Page')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "name",
+                    models.CharField(
+                        help_text="Attachment name", max_length=150
+                    ),
+                ),
+                (
+                    "upload_date",
+                    models.DateTimeField(
+                        auto_now=True, help_text="Attachment upload date"
+                    ),
+                ),
+                (
+                    "uploaded_file",
+                    models.FileField(upload_to="uploads/%Y/%m/%d/"),
+                ),
+                (
+                    "page",
+                    models.ForeignKey(
+                        blank=True,
+                        help_text="Page attachment",
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="cms.Page",
+                    ),
+                ),
             ],
-        ),
+        )
     ]

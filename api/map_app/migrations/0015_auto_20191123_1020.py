@@ -5,15 +5,9 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('map_app', '0014_auto_20191113_2105'),
-    ]
+    dependencies = [("map_app", "0014_auto_20191113_2105")]
 
     operations = [
-        migrations.DeleteModel(
-            name='Building',
-        ),
-        migrations.DeleteModel(
-            name='CsvFile',
-        ),
+        migrations.DeleteModel(name="Building"),
+        migrations.DeleteModel(name="CsvFile"),
     ]
