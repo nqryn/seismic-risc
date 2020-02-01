@@ -1,7 +1,7 @@
 import pytest
 
 from django.utils import timezone
-from buildings.models import Building, CsvFile
+from buildings.models import Building
 
 
 @pytest.fixture
