@@ -136,6 +136,12 @@ class Test(Base):
     DEBUG = True
     SECRET_KEY = "secret"
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'testdbfile.sqlite3',
+        }
+    }
 
 
 class Prod(Base):
